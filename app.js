@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT | 5000
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.sendFile(__dirname + "/example-image.png")
 })
 
 app.listen(port, () => {
