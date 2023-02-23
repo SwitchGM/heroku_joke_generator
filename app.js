@@ -9,15 +9,16 @@ app.listen(port, () => {
 
 app.get('/', (req, res) => {
 //   res.sendFile(__dirname + "/example-image.png")
-    data = createImage()
-    img = Buffer.from(data, "base64")
-    res.writeHead(
-        200, {
-            "Content-Type": "image/png",
-            "Context-Length": img.length
-        }
-    )
-    res.end(img)
+    res.send("Hello darkness")
+    // data = createImage()
+    // img = Buffer.from(data, "base64")
+    // res.writeHead(
+    //     200, {
+    //         "Content-Type": "image/png",
+    //         "Context-Length": img.length
+    //     }
+    // )
+    // res.end(img)
 })
 
 function createImage() {
