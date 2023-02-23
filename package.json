@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SwitchGM/heroku_joke_generator/issues"
   },
-  "homepage": "https://github.com/SwitchGM/heroku_joke_generator#readme"
+  "homepage": "https://github.com/SwitchGM/heroku_joke_generator#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
