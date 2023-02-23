@@ -3,6 +3,10 @@ const { createCanvas } = require("canvas")
 const app = express()
 const port = process.env.PORT | 5000
 
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+})
+
 app.get('/', (req, res) => {
 //   res.sendFile(__dirname + "/example-image.png")
     data = createImage()
@@ -14,10 +18,6 @@ app.get('/', (req, res) => {
         }
     )
     res.end(img)
-})
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
 })
 
 function createImage() {
