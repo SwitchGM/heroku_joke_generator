@@ -41,7 +41,7 @@ function createImage() {
     c = Canvas.createCanvas(1000, px*1.3)
     ctx = c.getContext("2d")
 
-    ctx.fillStyle = "black"
+    ctx.fillStyle = "violet"
     // ctx.textAlign = "center"
     ctx.font = `${px}pt Calibri`
     ctx.fillText(joke, 0, px)
